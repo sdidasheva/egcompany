@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Inter";
+	src: url("../../public/assets/fonts/Inter/Inter-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../../public/assets/fonts/Inter/Inter-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../../public/assets/fonts/Inter/Inter-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../../public/assets/fonts/Inter/Inter-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PT-Root-UI";
+	src: url("../../public/assets/fonts/PT-Root-UI/PT-Root-UI_Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+$background-color: #fff8ee;
+$primary-color: #6eb63c;
+$secondary-color: #333333de;
+$thirdly-color: #333333;
+$yellow-color: #c7d30a;
+$pt-font: "PT-Root-UI", sans-serif;
+$inter-font: "Inter", sans-serif;
+$transition: all 0.3s ease-in-out;

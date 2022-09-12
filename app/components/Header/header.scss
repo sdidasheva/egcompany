@@ -1,0 +1,311 @@
+@import "../../styles/variables.scss";
+
+.header {
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 24px 0;
+		border-bottom: 1px solid #3333331a;
+		&-contact {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 24px 0;
+			border-bottom: transparent;
+		}
+	}
+	&__burger {
+		cursor: pointer;
+	}
+	&__lang {
+		&-selected {
+			background-color: rgba(51, 51, 51, 0.1);
+			border-radius: 50px;
+			border: none;
+			outline: none;
+			padding: 6px;
+			font-family: $pt-font;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 1px;
+			color: $secondary-color;
+			cursor: pointer;
+			margin-bottom: 2px;
+			transition: $transition;
+			&:hover {
+				background-color: $secondary-color;
+				color: $background-color;
+			}
+		}
+		&-options {
+			position: absolute;
+			opacity: 0;
+			transition: $transition;
+			&-active {
+				position: absolute;
+				opacity: 1;
+				transition: $transition;
+			}
+			&-item {
+				background-color: #eae4db;
+				padding: 6px;
+				font-family: $pt-font;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 21px;
+				letter-spacing: 1px;
+				color: $secondary-color;
+				cursor: pointer;
+				margin-bottom: 0px;
+				transition: $transition;
+				margin-top: 2px;
+				&:hover {
+					background-color: $secondary-color;
+					color: $background-color;
+				}
+				&:last-child {
+					border-bottom-left-radius: 20%;
+					border-bottom-right-radius: 20%;
+				}
+			}
+		}
+		&-contact {
+			z-index: 2;
+			&-selected {
+				background-color: rgba(255, 248, 238, 0.1);
+				border-radius: 50px;
+				border: none;
+				outline: none;
+				padding: 6px;
+				font-family: $pt-font;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 21px;
+				letter-spacing: 1px;
+				color: rgba(255, 255, 255, 0.74);
+				cursor: pointer;
+				margin-bottom: 2px;
+				transition: $transition;
+				&:hover {
+					background-color: $background-color;
+					color: $secondary-color;
+				}
+			}
+		}
+	}
+	&__menu {
+		position: fixed;
+		top: 0;
+		z-index: 11;
+		&-nav {
+			width: 420px;
+			height: 100vh;
+			background-color: white;
+			box-shadow: 4px 0px 33px 6px rgba(38, 73, 94, 0.14);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 40px 0 32px 0;
+			position: fixed;
+			top: 0;
+			left: -1000px;
+			transition: all 850ms ease-in-out;
+			&-active {
+				width: 420px;
+				height: 100vh;
+				background-color: white;
+				box-shadow: 4px 0px 33px 6px rgba(38, 73, 94, 0.14);
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				padding: 40px 0 32px 0;
+				position: fixed;
+				top: 0;
+				transition: $transition;
+				left: 0;
+			}
+			&-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 450px;
+				width: 100%;
+				margin-bottom: 20px;
+				&-close {
+					align-self: flex-end;
+					margin-right: 30px;
+					cursor: pointer;
+					width: 30px;
+				}
+				&-list {
+					text-align: center;
+					ul {
+						list-style: none;
+						border-top: 1px solid rgba(51, 51, 51, 0.1);
+						padding: 0px;
+						li {
+							padding: 32px 0;
+							border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+							cursor: pointer;
+							transition: $transition;
+							font-weight: 500;
+							font-size: 20px;
+							line-height: 1;
+							text-align: center;
+							color: $secondary-color;
+							&:hover {
+								background-color: $secondary-color;
+								border-bottom: 1px solid white;
+								color: white;
+							}
+						}
+					}
+				}
+			}
+			&-contacts {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				&-social {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					gap: 15px;
+					margin-bottom: 16px;
+					div {
+						cursor: pointer;
+						transition: $transition;
+						&:hover {
+							svg path {
+								fill-opacity: 1;
+							}
+						}
+					}
+				}
+				p {
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 15px;
+					color: $secondary-color;
+				}
+			}
+			&-button {
+				margin: 0 50px;
+				padding: 20px 38px 20px 41px;
+				@media screen and (max-width: 1400px) {
+					font-size: 20px !important;
+					line-height: 20px !important;
+					width: 320px !important;
+				}
+			}
+		}
+	}
+	&__logo-contact {
+		margin-left: 32px;
+	}
+	&__button-contact {
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: center;
+		button {
+			padding: 11px 17px;
+			background-color: transparent;
+			border: 1px solid white;
+			border-radius: 50px;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 16px;
+			color: white;
+			transition: $transition;
+			z-index: 2;
+			svg {
+				margin-right: 11px;
+			}
+			path {
+				fill: white;
+				transition: $transition;
+			}
+			&:hover {
+				background-color: $background-color;
+				color: $secondary-color;
+				svg path {
+					fill: $secondary-color;
+				}
+			}
+		}
+	}
+}
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	transition: 850ms;
+	opacity: 0;
+	&-active {
+		background-color: #26495e66;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		opacity: 1;
+		top: 0;
+		transition: 350ms;
+		z-index: 5;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.header {
+		&__wrapper-contact {
+			border-bottom: 1px solid #3333331a;
+		}
+		&__logo-contact {
+			margin-left: 0px;
+		}
+		&__button-contact {
+			display: none;
+		}
+		&__lang-contact {
+			&-selected {
+				background-color: rgba(51, 51, 51, 0.1);
+				color: $secondary-color;
+				&:hover {
+					background-color: $secondary-color;
+					color: $background-color;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.header {
+		padding: 0 16px;
+		&__wrapper {
+			padding: 16px 0;
+		}
+		&__burger {
+			width: 20px;
+			svg {
+				rect {
+					width: 20px;
+				}
+			}
+		}
+		&__lang {
+			padding: 5px;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&__menu {
+			&-nav {
+				width: 100%;
+			}
+		}
+	}
+}

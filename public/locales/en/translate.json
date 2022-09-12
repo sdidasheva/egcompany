@@ -1,0 +1,46 @@
+{
+	"headerbtn": "MAIN PAGE",
+	"main" : {
+		"contactBtn": "CONTACT US",
+		"text": "Today we are the only company in the Kazakhstani agricultural market that has been proudly presenting the best equipment from world leaders for more than 20 years, such as:"
+	},
+	"advantages": {
+		"titleBlack": "WE ARE",
+		"titleGreen": "IN NUMBERS"
+	},
+	"solutions": {
+		"title": "UNIQUE SOLUTIONS",
+		"text": "Over the years, we have created a developed network to provide farmers with unique integrated solutions in agriculture in Kazakhstan and Kyrgyzstan"
+	},
+	"mission": {
+		"titleGreen": "OUR",
+		"titleBlack": "MISSION",
+		"text": "We feed the world by helping farmers implement innovative solutions to develop agriculture and produce the highest quality products."
+	},
+	"values": {
+		"title": "VALUES",
+		"text": "that help fulfill our mission"
+	},
+	"news":{
+	"newsTitle": "WHAT'S NEWS"
+	},
+	"contact": {
+		"title": "CONTACT WITH US",
+		"name": "Name",
+		"namePlaceholder": "Enter your name",
+		"email": "Email",
+		"emailPlaceholder": "Enter your email",
+		"phone_number": "Phone",
+		"agreement": "I agree with",
+		"policy": "privacy policy",
+		"agreement2": "",
+		"send": "Send"
+	},
+	"errors": {
+		"required": "This field is required",
+		"email": "Please enter a valid email address",
+		"phone_number": "Please enter a valid phone number",
+		"agreement": "Please read the privacy policy"
+	}
+
+}
